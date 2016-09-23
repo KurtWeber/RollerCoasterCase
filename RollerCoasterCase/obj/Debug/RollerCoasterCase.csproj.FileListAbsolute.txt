@@ -1,0 +1,6 @@
+c:\users\owner\documents\visual studio 2015\Projects\RollerCoasterCase\RollerCoasterCase\bin\Debug\RollerCoasterCase.exe.config
+c:\users\owner\documents\visual studio 2015\Projects\RollerCoasterCase\RollerCoasterCase\bin\Debug\RollerCoasterCase.exe
+c:\users\owner\documents\visual studio 2015\Projects\RollerCoasterCase\RollerCoasterCase\bin\Debug\RollerCoasterCase.pdb
+c:\users\owner\documents\visual studio 2015\Projects\RollerCoasterCase\RollerCoasterCase\obj\Debug\RollerCoasterCase.csprojResolveAssemblyReference.cache
+c:\users\owner\documents\visual studio 2015\Projects\RollerCoasterCase\RollerCoasterCase\obj\Debug\RollerCoasterCase.exe
+c:\users\owner\documents\visual studio 2015\Projects\RollerCoasterCase\RollerCoasterCase\obj\Debug\RollerCoasterCase.pdb
