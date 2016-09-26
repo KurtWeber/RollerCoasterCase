@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using 
+
 
 namespace RollerCoasterCase
 {
@@ -17,28 +17,28 @@ namespace RollerCoasterCase
             using (reader)
             {
                 // Count to determine number of lines
-                int lineNumber = 0;
+                //int lineNumber = 0;
+                //int ltrNumber = 0;
 
                 // Read first line
                 string line = reader.ReadLine();
-
-                // Read the other lines in file
-                while (line != null)
+                Console.WriteLine("Line Length: {0}", line.Length);
+                
+                for (int i = 0; i <= line.Length - 1; i++)
                 {
-                    // lineNumber = lineNumber + 1
-                    lineNumber++;
-
-                    // Changing single letter
-                    string replaceLetter = 
+                    char ltr = line[i];
+                    do
+                    {
+                        if (char.IsUpper(ltr))
+                        {
+                            ltr = char.ToUpper(ltr);
+                        }
+                        
+                    } while (ltr > 'A' && ltr < 'z');
                     
-                    // Write to console
-                    Console.Write(replaceLetter);
-
-                    // Read next line
-                    line = reader.ReadLine();
-                    Console.WriteLine();
-
                 }
+                Console.WriteLine(line);
+
             }
         }
     }
