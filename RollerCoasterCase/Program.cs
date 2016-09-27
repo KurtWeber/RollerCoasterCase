@@ -12,33 +12,42 @@ namespace RollerCoasterCase
     {
         static void Main(string[] args)
         {
+            //int count = 0;
+
             StreamReader reader = new StreamReader("..\\..\\..\\RollerCoaster.txt");
 
             using (reader)
             {
                 // Count to determine number of lines
-                //int lineNumber = 0;
-                //int ltrNumber = 0;
-
+                int lineNumber = 0;
+                
                 // Read first line
                 string line = reader.ReadLine();
-                Console.WriteLine("Line Length: {0}", line.Length);
                 
-                for (int i = 0; i <= line.Length - 1; i++)
+                // Cycle through lines
+                while (line != null)
                 {
-                    char ltr = line[i];
-                    do
+                    lineNumber++;
+                    int count = 0;
+                    for (int i = 0; i <= line.Length - 1; i++)
                     {
-                        if (char.IsUpper(ltr))
+                        char ltr = line[i];
                         {
-                            ltr = char.ToUpper(ltr);
+                            // Counting letters only and capitalizing letters on odd number postion
+                            if ((ltr >= 'A' && ltr <= 'Z') || (ltr >= 'a' && ltr <= 'z'))
+                            {
+                                count++;
+                                if (count % 2 != 0)
+                                {
+                                    ltr = Char.ToUpper(ltr);
+                                }
+                            }
+                            Console.Write(ltr);
                         }
-                        
-                    } while (ltr > 'A' && ltr < 'z');
-                    
+                    }
+                    Console.WriteLine();
+                    line = reader.ReadLine();
                 }
-                Console.WriteLine(line);
-
             }
         }
     }
